@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double km, min, velocidadMedia;
+
+        System.out.println("Introduzca la distancia recorrida (km): ");
+        Scanner teclado1 = new Scanner(System.in);
+        km = teclado1.nextDouble();
+
+        System.out.println("Introduzca el tiempo del recorrido (min): ");
+        Scanner teclado2 = new Scanner(System.in);
+        min = teclado2.nextDouble();
+
+        velocidadMedia = km / (min / 60);
+
+        System.out.println("Se ha desplazado a una velocidad de " + velocidadMedia + " km/h");
+
+
+    }
+}
